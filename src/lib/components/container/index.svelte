@@ -1,5 +1,5 @@
 <script lang="ts">
-	let className;
+	let className = '';
 
 	// noinspection JSUnusedGlobalSymbols
 	export { className as class };
