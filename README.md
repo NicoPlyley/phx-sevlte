@@ -227,7 +227,7 @@ related information, which often originates from `+page.server`
    const { title, image } = data;
 </script>
 
-<div style=`background: url('${image}')`>
+<div style="background: url('{image}')">
    <h1>Title</h1>
 </div>
 
@@ -235,6 +235,7 @@ related information, which often originates from `+page.server`
 When your components are designed to be used within page components, the choice between utilizing a 
 single data prop or employing multiple props depends on your specific use case. You can often simplify 
 by using a single data prop or even harnessing
+[Named Slots](https://svelte.dev/docs/special-elements#slot) or
 [Svelte Fragments](https://svelte.dev/docs/special-elements#svelte-fragment), 
 complemented with necessary props passed 
 along, such as adding a background through CSS. This flexibility ensures your components are adaptable to 
